@@ -171,7 +171,7 @@ public class App {
 			var r = new Resposta();
 			r.setQuestaoId(q.getId());
 			try {
-				r.setAlternativaMarcada(respostaDigitada.trim().charAt(0));
+				r.setRespostaDada(respostaDigitada.trim());
 			} catch (Exception ignored) {
 			}
 			r.setCorreta(q.isRespostaCorreta(respostaDigitada));
