@@ -1,6 +1,7 @@
 package br.com.ucsal.olimpiadas;
 
 import br.com.ucsal.olimpiadas.repository.ParticipanteRepository;
+import br.com.ucsal.olimpiadas.repository.ParticipanteRepositoryMemoria;
 import br.com.ucsal.olimpiadas.repository.ProvaRepository;
 import br.com.ucsal.olimpiadas.repository.QuestaoRepository;
 import br.com.ucsal.olimpiadas.repository.TentativaRepository;
@@ -11,7 +12,7 @@ import java.util.Scanner;
 
 public class App {
 
-	private static final ParticipanteRepository participanteRepo = new ParticipanteRepository();
+	private static final ParticipanteRepository participanteRepo = new ParticipanteRepositoryMemoria();
 	private static final ProvaRepository provaRepo = new ProvaRepository();
 	private static final QuestaoRepository questaoRepo = new QuestaoRepository();
 	private static final TentativaRepository tentativaRepo = new TentativaRepository();
